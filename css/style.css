@@ -239,8 +239,6 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('../img/hero.jpg') center/cover no-repeat;
     padding: 100px 20px 60px;
 }
 
