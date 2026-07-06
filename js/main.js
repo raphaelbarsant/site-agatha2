@@ -118,6 +118,7 @@ function initHeaderScroll() {
 
 // Initialize all
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('js-loaded');
     initComparisonSliders();
     initMobileMenu();
     initScrollReveal();
