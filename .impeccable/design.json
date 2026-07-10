@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-06T00:23:00.000Z",
+  "title": "Design System: Agatha Pinheiro Presets",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Dourado Clássico",
+        "canonical": "#C9A96E",
+        "tonalRamp": ["#3D2E1A", "#5C4527", "#7B5C34", "#9A7341", "#B8944F", "#C9A96E", "#D4BC8E", "#E0CFB0"]
+      },
+      "primary-deep": {
+        "role": "primary-deep",
+        "displayName": "Dourado Profundo",
+        "canonical": "#B8944F",
+        "tonalRamp": ["#3D2E1A", "#5C4527", "#7B5C34", "#9A7341", "#B8944F", "#C9A96E", "#D4BC8E", "#E0CFB0"]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Branco Puro",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["#333333", "#444444", "#555555", "#F8F8F8", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"]
+      },
+      "neutral-surface": {
+        "role": "neutral",
+        "displayName": "Cinza Superfície",
+        "canonical": "#F8F8F8",
+        "tonalRamp": ["#333333", "#444444", "#555555", "#F8F8F8", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"]
+      },
+      "neutral-ink": {
+        "role": "neutral",
+        "displayName": "Cinza Texto",
+        "canonical": "#333333",
+        "tonalRamp": ["#111111", "#222222", "#333333", "#444444", "#555555", "#666666", "#777777", "#888888"]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Cinza Muted",
+        "canonical": "#666666",
+        "tonalRamp": ["#333333", "#444444", "#555555", "#666666", "#777777", "#888888", "#999999", "#AAAAAA"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Títulos hero e seções principais. Presença sem dominar."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido e navegação. Clareza técnica."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-lift",
+        "value": "0 4px 20px rgba(0, 0, 0, 0.08)",
+        "purpose": "Hover em cards e botões. Elevação sutil que comunica interatividade."
+      },
+      {
+        "name": "cta-glow",
+        "value": "0 4px 15px rgba(201, 169, 110, 0.4)",
+        "purpose": "Hover no botão primário. Brilho dourado que reforça a ação."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "all 0.3s ease",
+        "purpose": "Transições padrão para estados interativos."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "576px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "992px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA principal - ação de compra.",
+      "html": "<button class=\"ds-btn-primary\">QUERO MEUS PRESETS</button>",
+      "css": ".ds-btn-primary { background: var(--color-gold); color: var(--color-white); padding: 14px 32px; font-family: 'Inter', system-ui, sans-serif; font-size: 1rem; font-weight: 500; border-radius: 10px; border: none; cursor: pointer; transition: all 0.3s ease; } .ds-btn-primary:hover { background: var(--color-gold-dark); transform: translateY(-2px); box-shadow: 0 4px 15px rgba(201, 169, 110, 0.4); }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Links de navegação do header.",
+      "html": "<a href=\"#section\" class=\"ds-nav-link\">Início</a>",
+      "css": ".ds-nav-link { font-family: 'Inter', system-ui, sans-serif; font-size: 0.9rem; font-weight: 500; color: var(--color-medium-gray); transition: color 0.3s ease; text-decoration: none; } .ds-nav-link:hover { color: var(--color-gold); }"
+    },
+    {
+      "name": "Testimonial Card",
+      "kind": "card",
+      "refersTo": "testimonial-card",
+      "description": "Cards de depoimentos com foto circular.",
+      "html": "<div class=\"ds-testimonial-card\"><img src=\"avatar.jpg\" alt=\"Cliente\" class=\"ds-testimonial-image\"><h3 class=\"ds-testimonial-name\">Maria Silva</h3><p class=\"ds-testimonial-text\">\"Depoimento aqui.\"</p><div class=\"ds-testimonial-stars\">★★★★★</div></div>",
+      "css": ".ds-testimonial-card { background: var(--color-light-gray); padding: 2rem; border-radius: 10px; text-align: center; transition: all 0.3s ease; } .ds-testimonial-card:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); } .ds-testimonial-image { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--color-gold); } .ds-testimonial-name { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; margin-bottom: 0.5rem; } .ds-testimonial-text { font-size: 0.95rem; font-style: italic; margin-bottom: 1rem; color: var(--color-medium-gray); } .ds-testimonial-stars { color: var(--color-gold); font-size: 1.2rem; letter-spacing: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Padrão Ouro",
+    "overview": "Este sistema visual traduz precisão técnica em elegância acessível. Cada elemento comunica expertise profissional sem frieza - é o equilíbrio entre um estúdio de fotografia de alto nível e a acolhedora realidade de quem vive de criar imagens. A paleta é intencionalmente contida: o dourado carrega toda a energia da marca, enquanto neutros precisos fornecem o palco onde as fotos dos presets brilham.\n\nO sistema rejeita explicitamente o visual SaaS genérico (gradientes roxo-azul, cards genéricos, Inter em todo lugar) e o look 'influencer digital' (emojis excessivos, cores neon, linguagem informal). Em vez disso, busca a sofisticação de uma ourivesaria: cada detalhe é preciso, cada espaço é respirável, cada interação é tátil.",
+    "keyCharacteristics": [
+      "Precisão tipográfica com hierarquia clara",
+      "Dourado como âncora visual, não decoração",
+      "Espaço negativo como elemento de design",
+      "Micro-interações que comunicam qualidade",
+      "Contraste alto para legibilidade profissional"
+    ],
+    "rules": [
+      {
+        "name": "The Gold Accent Rule",
+        "body": "O dourado é usado no máximo 15% de qualquer superfície. Sua economia transmite sofisticação - se tudo é dourado, nada é especial.",
+        "section": "colors"
+      },
+      {
+        "name": "The Breathing Room Rule",
+        "body": "Line-height nunca abaixo de 1.2 para títulos, 1.6 para corpo. Texto compacto é estresse visual.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Superfícies são planas em repouso. Sombras aparecem apenas como resposta a estado (hover, elevação, foco).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do usar o dourado com economia - máximo 15% da superfície",
+      "Do manter contraste alto (4.5:1 mínimo) para todo texto",
+      "Do usar Playfair Display para títulos que precisam de autoridade",
+      "Do criar espaço generoso entre elementos - respiração é sofisticação",
+      "Do usar sombras apenas em estados interativos (hover, focus)",
+      "Do manter a paleta contida - neutros + um acento"
+    ],
+    "donts": [
+      "Don't usar gradientes roxo-azul ou purple-blue - é o SaaS genérico que PRODUCT.md rejeita",
+      "Don't criar cards dentro de cards - hierarquia plana, sem nesting",
+      "Don't usar fonte Inter em títulos - Playfair para display, Inter para corpo",
+      "Don't colocar texto cinza sobre fundo colorido - usar tom da própria cor",
+      "Don't animações bounce ou elásticas - easing suave e profissional",
+      "Don't usar emojis excessivos ou linguagem informal - é marca profissional, não influencer",
+      "Don't criar sidebars ou navegação complexa - é landing page, não app",
+      "Don't usar borders-left/right maiores que 1px como acento - é o anti-pattern 'side-stripe'"
+    ]
+  }
+}

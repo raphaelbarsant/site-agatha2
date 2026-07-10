@@ -12,7 +12,6 @@ function initComparisonSliders() {
         const afterUrl = slider.dataset.after;
         
         if (beforeUrl) {
-            imageBefore.style.setProperty('--before-image', `url(${beforeUrl})`);
             imageBefore.style.backgroundImage = `url(${beforeUrl})`;
         }
         if (afterUrl) {
