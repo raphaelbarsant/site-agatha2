@@ -342,9 +342,10 @@ p {
 /* Comparison Grid */
 .comparison-grid {
     display: flex;
-    gap: 1rem;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .comparison-card {
@@ -364,7 +365,7 @@ p {
 .comparison-slider {
     position: relative;
     width: 100%;
-    aspect-ratio: 9 / 14;
+    aspect-ratio: 9 / 16;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-light);
