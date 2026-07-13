@@ -341,15 +341,16 @@ p {
 
 /* Comparison Grid */
 .comparison-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 400px;
+    display: flex;
+    gap: 1rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .comparison-card {
+    flex: 1;
     text-align: center;
+    min-width: 0;
 }
 
 .comparison-caption {
@@ -477,9 +478,27 @@ p {
 }
 
 /* Responsive - Comparison */
+@media (max-width: 992px) {
+    .comparison-grid {
+        flex-wrap: wrap;
+    }
+    .comparison-card {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+}
+
 @media (max-width: 768px) {
     .comparison {
         padding: 60px 0;
+    }
+
+    .comparison-grid {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .comparison-card {
+        flex: none;
     }
 
     .handle-circle {
